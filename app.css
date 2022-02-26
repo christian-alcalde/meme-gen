@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.meme-creation {
+  position: fixed;
+  background-color: #ececec;
+  padding: 15px;
+  border: 2px solid black;
+}
+
+.input {
+  margin-bottom: 15px;
+}
+
+.col input {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.url {
+}
+
+.top-text {
+}
+
+.bottom-text {
+}
