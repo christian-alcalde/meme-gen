@@ -37,8 +37,9 @@ body {
   transition: 0.3s;
 }
 
-.meme:hover {
+.meme:hover img {
   opacity: 0.2;
+  transition: 0.3s;
 }
 
 .meme-text {
@@ -48,6 +49,7 @@ body {
   font-size: 36px;
   color: white;
   text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
+  transition: 0.3s;
 }
 
 .top-text {
@@ -62,4 +64,23 @@ body {
 
 img {
   border-radius: 5%;
+}
+
+.garbage {
+  /* transition: 1s; */
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.meme:hover .garbage {
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.meme:hover .meme-text {
+  opacity: 0.2;
 }
