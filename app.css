@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .heading {
@@ -9,10 +10,25 @@ body {
   margin-bottom: 20px;
 }
 
+h1,
+h2 {
+  border: solid 3px black;
+  background-color: #ececec;
+  display: inline-block;
+  padding: 5px;
+}
+
 .meme-creation {
   background-color: #ececec;
   padding: 15px;
   border: 2px solid black;
+}
+
+label {
+  border: solid 3px black;
+  margin-bottom: 3px;
+  padding: 5px;
+  background-color: #ececec;
 }
 
 .input {
@@ -43,6 +59,7 @@ body {
 }
 
 .meme-text {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -50,6 +67,7 @@ body {
   color: white;
   text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
   transition: 0.3s;
+  text-transform: uppercase;
 }
 
 .top-text {

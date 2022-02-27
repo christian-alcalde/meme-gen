@@ -38,3 +38,20 @@ btn.addEventListener("click", function (e) {
     this.remove();
   });
 });
+
+let h1 = document.querySelector("h1");
+let h2 = document.querySelector("h2");
+let header = document.querySelector(".meme-creation");
+
+setInterval(function () {
+  h1.style.color = randomColor();
+  h2.style.color = randomColor();
+  header.style.backgroundColor = randomColor();
+}, 500);
+
+function randomColor() {
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+  return `rgb(${r},${g},${b})`;
+}
