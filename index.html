@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid meme-creation">
       <div class="container-xxl heading">
         <div class="row justify-content-center">
           <div class="col">
@@ -27,30 +27,56 @@
           </div>
         </div>
       </div>
-      <div class="container-xxl inputs">
-        <div class="row align-items-center">
-          <div class="col-11">
-            <label for="url">URL</label>
+      <div class="container-xxl">
+        <form action="/submit.php">
+          <div class="row align-items-center">
+            <div class="col url input">
+              <label for="url">Image URL: </label>
+              <input
+                type="url"
+                name="url"
+                id="url"
+                placeholder="Please copy and paste image URL here."
+                required
+              />
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col input">
+              <label for="top">Top Text: </label>
+              <input
+                type="text"
+                name="top"
+                id="top"
+                placeholder="(Optional) This text will appear towards the top of the image."
+              />
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col input">
+              <label for="bottom">Bottom Text: </label>
+              <input
+                type="text"
+                name="bottom"
+                id="bottom"
+                placeholder="(Optional) This text will appear towards the bottom of the image."
+              />
+            </div>
+          </div>
+          <button
+            id="submit"
+            type="submit"
+            value="submit"
+            class="btn btn-sm btn-success"
+          >
+            Create Meme
+          </button>
+        </form>
+      </div>
+    </div>
 
-            <input type="url" name="url" id="url" placeholder="(Required)" required/>
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col">
-            <label for="top">Top Text</label>
-            <input type="text" name="top" id="top" placeholder="(Optional) This text will appear towards the top of the image" />
-          </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col">
-            <label for="bottom">Bottom Text</label>
-            <input type="text" name="bottom" id="bottom" placeholder="(Optional) This text will appear towards the bottom of the image"/>
-          </div>
-        </div>
-        <div class="row">
-          <button type="button" class="btn btn-primary">Create Meme</button>
-        </div>
-
+    <div class="meme-section">
+      <!-- THIS IS WHERE THE MEMES ARE GENERATED -->
     </div>
     <script src="app.js"></script>
     <script
