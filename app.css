@@ -65,7 +65,7 @@ label {
   position: absolute;
   width: 100%;
   text-align: center;
-  font-size: 36px;
+  font-size: 5em;
   color: white;
   text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
   transition: 0.3s;
