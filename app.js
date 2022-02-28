@@ -27,7 +27,11 @@ btn.addEventListener("click", function (e) {
 
 let addImage = function (link) {
   let img = document.createElement("img");
-  img.src = link;
+  if (link === "") {
+    img.src = "default.jpg";
+  } else {
+    img.src = link;
+  }
   return img;
 };
 
